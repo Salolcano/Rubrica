@@ -1,0 +1,174 @@
+{
+  "contract": "Rubrica",
+  "methods": [
+    {
+      "kind": "constructor",
+      "name": "__init__",
+      "params": [],
+      "returns": "None"
+    },
+    {
+      "kind": "write",
+      "name": "cancel_contest",
+      "params": [
+        {
+          "name": "contest_id",
+          "type": "int"
+        }
+      ],
+      "returns": "None"
+    },
+    {
+      "kind": "write_payable",
+      "name": "create_contest",
+      "params": [
+        {
+          "name": "title",
+          "type": "str"
+        },
+        {
+          "name": "rubric",
+          "type": "str"
+        },
+        {
+          "name": "submit_by",
+          "type": "int"
+        },
+        {
+          "name": "judge_window",
+          "type": "int"
+        },
+        {
+          "name": "min_score",
+          "type": "int"
+        },
+        {
+          "name": "band_width",
+          "type": "int"
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "kind": "view",
+      "name": "get_config",
+      "params": [],
+      "returns": "dict"
+    },
+    {
+      "kind": "view",
+      "name": "get_contest",
+      "params": [
+        {
+          "name": "contest_id",
+          "type": "int"
+        }
+      ],
+      "returns": "dict"
+    },
+    {
+      "kind": "view",
+      "name": "get_contest_count",
+      "params": [],
+      "returns": "int"
+    },
+    {
+      "kind": "view",
+      "name": "get_entries",
+      "params": [
+        {
+          "name": "contest_id",
+          "type": "int"
+        }
+      ],
+      "returns": "list"
+    },
+    {
+      "kind": "view",
+      "name": "get_entry",
+      "params": [
+        {
+          "name": "contest_id",
+          "type": "int"
+        },
+        {
+          "name": "entry_index",
+          "type": "int"
+        }
+      ],
+      "returns": "dict"
+    },
+    {
+      "kind": "view",
+      "name": "get_entry_for",
+      "params": [
+        {
+          "name": "contest_id",
+          "type": "int"
+        },
+        {
+          "name": "entrant",
+          "type": "str"
+        }
+      ],
+      "returns": "int"
+    },
+    {
+      "kind": "view",
+      "name": "get_leaderboard",
+      "params": [
+        {
+          "name": "contest_id",
+          "type": "int"
+        }
+      ],
+      "returns": "list"
+    },
+    {
+      "kind": "write",
+      "name": "judge_entry",
+      "params": [
+        {
+          "name": "contest_id",
+          "type": "int"
+        },
+        {
+          "name": "entry_index",
+          "type": "int"
+        }
+      ],
+      "returns": "None"
+    },
+    {
+      "kind": "write",
+      "name": "settle",
+      "params": [
+        {
+          "name": "contest_id",
+          "type": "int"
+        }
+      ],
+      "returns": "None"
+    },
+    {
+      "kind": "write",
+      "name": "submit_entry",
+      "params": [
+        {
+          "name": "contest_id",
+          "type": "int"
+        },
+        {
+          "name": "url",
+          "type": "str"
+        },
+        {
+          "name": "content_hash",
+          "type": "str"
+        }
+      ],
+      "returns": "int"
+    }
+  ],
+  "version": "0.1.0"
+}

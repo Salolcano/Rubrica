@@ -1,0 +1,8 @@
+networks:
+  default: studionet_next
+  studionet_next:
+    url: "https://studio-next.genlayer.com/api"
+    chain_id: 61997
+paths:
+  contracts: "contracts"
+  artifacts: ".gltest-artifacts"

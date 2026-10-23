@@ -1,0 +1,2 @@
+# The local checks (scripts/preflight.py and tests/direct) use only the Python
+# standard library. Nothing needs to be installed to run them.

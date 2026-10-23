@@ -1,0 +1,12 @@
+# Local release gate output (stub SDK harness, not a live network run)
+# command: python scripts/preflight.py
+abi_matches_committed_artifact=PASS
+............................................................................
+----------------------------------------------------------------------
+Ran 76 tests in 1.052s
+
+OK
+contract_sha256=0xd50f2a907556a0af9e023116b97c36a975f58977f40b75ae949c171933128051
+contract_source_bytes=26290
+direct_tests=76
+preflight=PASS
